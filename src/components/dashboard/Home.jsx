@@ -33,15 +33,16 @@ const Home = () => {
       <h1 className="text-3xl font-semibold mb-6">Welcome, Ecibu Michael</h1>
 
       <Button className="text-white bg-cyan-800 border border-cyan-800 focus:outline-none hover:bg-cyan-800 focus:ring-4 focus:ring-cyan-800 cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-      onClick={handleAddItem}>Add Item</Button>
+        onClick={handleAddItem}>Add Item</Button>
 
       <div className="relative overflow-x-auto">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-              <th scope="col" className="px-6 py-3">ID</th>
-              <th scope="col" className="px-6 py-3">Product Name</th>
+              <th scope="col" className="px-3 py-3">ID</th>
+              <th scope="col" className="px-6 py-3">Inventory Name</th>
               <th scope="col" className="px-6 py-3">Category</th>
+              <th scope="col" className="px-6 py-3">Product Classification</th>
               <th scope="col" className="px-6 py-3">Location</th>
               <th scope="col" className="px-6 py-3">Price</th>
               <th scope="col" className="px-6 py-3">Actions</th>
@@ -49,12 +50,13 @@ const Home = () => {
           </thead>
           <tbody>
             <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-              <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">17"</th>
-              <td className="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td className="px-6 py-4">Supplies</td>
-              <td className="px-6 py-4">Kampala</td>
-              <td className="px-6 py-4">100,002,999</td>
-              <td className="px-6 py-4">
+              <th scope="row" className="px-3 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">17"</th>
+              <td className="px-6 py-3">Apple MacBook Pro 17"</td>
+              <td className="px-6 py-3">Supplies</td>
+              <td className="px-6 py-3">Electronics</td>
+              <td className="px-6 py-3">Kampala</td>
+              <td className="px-6 py-3">100,002,999</td>
+              <td className="px-6 py-3">
 
                 <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
                   onClick={() => handleEdit({ id: "17", name: "Apple MacBook Pro 17", category: "Supplies", location: "Kampala", price: "100,002,999" })}>
@@ -63,12 +65,13 @@ const Home = () => {
               </td>
             </tr>
             <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-              <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">17"</th>
-              <td className="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td className="px-6 py-4">Supplies</td>
-              <td className="px-6 py-4">Kampala</td>
-              <td className="px-6 py-4">100,002,000</td>
-              <td className="px-6 py-4">
+              <th scope="row" className="px-3 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">17"</th>
+              <td className="px-6 py-3">Apple MacBook Pro 17"</td>
+              <td className="px-6 py-3">Supplies</td>
+              <td className="px-6 py-3">Electronics</td>
+              <td className="px-6 py-3">Kampala</td>
+              <td className="px-6 py-3">100,002,000</td>
+              <td className="px-6 py-3">
 
                 <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
                   onClick={() => handleEdit({ id: "17", name: "Apple MacBook Pro 17", category: "Supplies", location: "Kampala", price: "100,002,999" })}>
@@ -77,97 +80,6 @@ const Home = () => {
               </td>
             </tr>
 
-
-
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-              <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">17"</th>
-              <td className="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td className="px-6 py-4">Supplies</td>
-              <td className="px-6 py-4">Kampala</td>
-              <td className="px-6 py-4">100,002,999</td>
-              <td className="px-6 py-4">
-
-                <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  onClick={() => handleEdit({ id: "17", name: "Apple MacBook Pro 17", category: "Supplies", location: "Kampala", price: "100,002,999" })}>
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-              <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">17"</th>
-              <td className="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td className="px-6 py-4">Supplies</td>
-              <td className="px-6 py-4">Kampala</td>
-              <td className="px-6 py-4">100,002,000</td>
-              <td className="px-6 py-4">
-
-                <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  onClick={() => handleEdit({ id: "17", name: "Apple MacBook Pro 17", category: "Supplies", location: "Kampala", price: "100,002,999" })}>
-                  Edit
-                </button>
-              </td>
-            </tr>
-
-
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-              <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">17"</th>
-              <td className="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td className="px-6 py-4">Supplies</td>
-              <td className="px-6 py-4">Kampala</td>
-              <td className="px-6 py-4">100,002,999</td>
-              <td className="px-6 py-4">
-
-                <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  onClick={() => handleEdit({ id: "17", name: "Apple MacBook Pro 17", category: "Supplies", location: "Kampala", price: "100,002,999" })}>
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-              <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">17"</th>
-              <td className="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td className="px-6 py-4">Supplies</td>
-              <td className="px-6 py-4">Kampala</td>
-              <td className="px-6 py-4">100,002,000</td>
-              <td className="px-6 py-4">
-
-                <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  onClick={() => handleEdit({ id: "17", name: "Apple MacBook Pro 17", category: "Supplies", location: "Kampala", price: "100,002,999" })}>
-                  Edit
-                </button>
-              </td>
-            </tr>
-
-
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-              <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">17"</th>
-              <td className="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td className="px-6 py-4">Supplies</td>
-              <td className="px-6 py-4">Kampala</td>
-              <td className="px-6 py-4">100,002,999</td>
-              <td className="px-6 py-4">
-
-                <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  onClick={() => handleEdit({ id: "17", name: "Apple MacBook Pro 17", category: "Supplies", location: "Kampala", price: "100,002,999" })}>
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-              <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">17"</th>
-              <td className="px-6 py-4">Apple MacBook Pro 17"</td>
-              <td className="px-6 py-4">Supplies</td>
-              <td className="px-6 py-4">Kampala</td>
-              <td className="px-6 py-4">100,002,000</td>
-              <td className="px-6 py-4">
-
-                <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  onClick={() => handleEdit({ id: "17", name: "Apple MacBook Pro 17", category: "Supplies", location: "Kampala", price: "100,002,999" })}>
-                  Edit
-                </button>
-              </td>
-            </tr>
-            
           </tbody>
         </table>
       </div>
@@ -205,17 +117,35 @@ const Home = () => {
             </div>
 
             <div className="space-y-4">
+              <label className="block text-gray-700 dark:text-gray-200" htmlFor="productName">Product ID</label>
+              <input
+                id="productID"
+                type="text"
+                className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-cyan-800 sm:text-sm"
+                disabled={true}
+              />
+
               <label className="block text-gray-700 dark:text-gray-200" htmlFor="productName">Product Name</label>
               <input
                 id="productName"
                 type="text"
                 className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-cyan-800 sm:text-sm"
-              disabled={true}
+                disabled={true}
               />
 
               <label className="block text-gray-700 dark:text-gray-200" htmlFor="category">Category</label>
               <input
                 id="category"
+                type="text"
+                value={currentProduct?.category}
+                onChange={(e) => setCurrentProduct({ ...currentProduct, category: e.target.value })}
+                className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-cyan-800 sm:text-sm"
+                disabled={true}
+              />
+
+              <label className="block text-gray-700 dark:text-gray-200" htmlFor="productClassification">Product Classification</label>
+              <input
+                id="productClassification"
                 type="text"
                 value={currentProduct?.category}
                 onChange={(e) => setCurrentProduct({ ...currentProduct, category: e.target.value })}
@@ -295,6 +225,13 @@ const Home = () => {
             </div>
 
             <div className="space-y-4">
+              <label className="block text-gray-700 dark:text-gray-200" htmlFor="productID">Product ID</label>
+              <input
+                id="productID"
+                type="text"
+                className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-cyan-800 sm:text-sm"
+              />
+
               <label className="block text-gray-700 dark:text-gray-200" htmlFor="productName">Product Name</label>
               <input
                 id="productName"
@@ -307,14 +244,21 @@ const Home = () => {
                 id="category"
                 type="text"
                 className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-cyan-800 sm:text-sm"
-                />
+              />
+
+              <label className="block text-gray-700 dark:text-gray-200" htmlFor="productClassification">Product Classification</label>
+              <input
+                id="productClassification"
+                type="text"
+                className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-cyan-800 sm:text-sm"
+              />
 
               <label className="block text-gray-700 dark:text-gray-200" htmlFor="location">Location</label>
               <input
                 id="location"
                 type="text"
                 className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-cyan-800 sm:text-sm"
-                  />
+              />
 
               <label className="block text-gray-700 dark:text-gray-200" htmlFor="price">Price</label>
               <input
