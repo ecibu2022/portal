@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { signin } from "../../connect/Connect";
 
 export default function Login() {
   const [isLoading, setIsLoading] = useState(false);
@@ -17,6 +18,9 @@ export default function Login() {
 
     try {
       await new Promise((resolve) => setTimeout(resolve, 5000));
+
+      const data=await signin(email, password);
+      console.log(data);
 
       navigate("/dashboard");
     } catch (error) {
